@@ -29,7 +29,7 @@ namespace WordpressTests
 
         public static void Close()
         {
-            //Instance.Close();
+            Instance.Close();
         }
     }
 }

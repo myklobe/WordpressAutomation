@@ -12,6 +12,7 @@ namespace WordpressTests
     [TestClass]
     public class CreatePostTests
     {
+
         [TestInitialize]
         public void Init()
         {
@@ -37,5 +38,6 @@ namespace WordpressTests
         {
             Driver.Close();
         }
+    
     }
 }

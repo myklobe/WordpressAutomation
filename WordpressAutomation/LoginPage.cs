@@ -19,8 +19,6 @@ namespace WordpressAutomation
             Driver.Instance.Navigate().GoToUrl("http://www.myklobe.com/Test/wp-login.php");
             var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(10));
             wait.Until(d => d.SwitchTo().ActiveElement().GetAttribute("id") == "user_login");
-
-
         }
         
         public static LoginCommand LoginAs(string userName)
@@ -56,8 +54,8 @@ namespace WordpressAutomation
 
             var loginButton = Driver.Instance.FindElement(By.Id("wp-submit"));
             loginButton.Click();
-
         }
+
     }
 
 }
