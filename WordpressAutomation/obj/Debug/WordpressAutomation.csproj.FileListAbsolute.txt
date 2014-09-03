@@ -1,0 +1,13 @@
+C:\CSharpProjects\WordpressAutomation\WordpressAutomation\obj\Debug\WordpressAutomation.csprojResolveAssemblyReference.cache
+C:\CSharpProjects\WordpressAutomation\WordpressAutomation\bin\Debug\WordpressAutomation.dll
+C:\CSharpProjects\WordpressAutomation\WordpressAutomation\bin\Debug\WordpressAutomation.pdb
+C:\CSharpProjects\WordpressAutomation\WordpressAutomation\bin\Debug\WebDriver.dll
+C:\CSharpProjects\WordpressAutomation\WordpressAutomation\bin\Debug\WebDriver.Support.dll
+C:\CSharpProjects\WordpressAutomation\WordpressAutomation\bin\Debug\WebDriver.xml
+C:\CSharpProjects\WordpressAutomation\WordpressAutomation\bin\Debug\WebDriver.Support.xml
+C:\CSharpProjects\WordpressAutomation\WordpressAutomation\obj\Debug\WordpressAutomation.dll
+C:\CSharpProjects\WordpressAutomation\WordpressAutomation\obj\Debug\WordpressAutomation.pdb
+C:\CSharpProjects\WordpressAutomation\WordpressAutomation\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+C:\CSharpProjects\WordpressAutomation\WordpressAutomation\bin\Debug\ThoughtWorks.Selenium.Core.dll
+C:\CSharpProjects\WordpressAutomation\WordpressAutomation\bin\Debug\Selenium.WebDriverBackedSelenium.xml
+C:\CSharpProjects\WordpressAutomation\WordpressAutomation\bin\Debug\ThoughtWorks.Selenium.Core.xml
