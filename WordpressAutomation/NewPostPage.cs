@@ -31,6 +31,34 @@ namespace WordpressAutomation
             var newPostlink = message.FindElements(By.TagName("a"))[0];
             newPostlink.Click();
         }
+
+        public static bool IsInEditMode()
+        {
+            return Driver.Instance.FindElement(By.Id("publish")) != null;
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+        public static string Title
+        {
+            get 
+            {
+                var title = Driver.Instance.FindElement(By.Id("title"));
+                if (title != null)
+                    return title.GetAttribute("value");
+                return string.Empty;
+            }
+        }
     }
         
         public class CreatePostCommand
