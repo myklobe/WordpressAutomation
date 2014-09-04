@@ -10,7 +10,7 @@ using WordpressAutomation;
 namespace WordpressTests
 {
     [TestClass]
-    public class CreatePostTests : WordpressTest
+    public class CreatePostTests : WordpressTest // inheret WordpressTest (Setup and Cleanup)
     {
 
         [TestMethod]

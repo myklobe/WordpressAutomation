@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace WordpressTests
 {
+    // class to inheret from that does all Test Setup and Cleanup
     public class WordpressTest
     {
         [TestInitialize]

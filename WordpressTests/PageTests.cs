@@ -9,7 +9,7 @@ using WordpressAutomation;
 namespace WordpressTests
 {
     [TestClass]
-    public class PageTests : WordpressTest
+    public class PageTests : WordpressTest // inheret WordpressTest (Setup and Cleanup)
     {
 
         [TestMethod]
