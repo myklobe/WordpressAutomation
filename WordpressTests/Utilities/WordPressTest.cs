@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WordpressAutomation;
 
 namespace WordpressTests
 {
@@ -14,6 +15,9 @@ namespace WordpressTests
         public void Init()
         {
             Driver.Initialize();
+            LoginPage.GoTo();
+            LoginPage.LoginAs("myklobe").WithPassword("T3stT3st").Login();
+            Assert.IsTrue(DashboardPage.IsAt, "Failed to Log in.");
         }
 
         [TestCleanup]

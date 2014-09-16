@@ -13,11 +13,7 @@ namespace WordpressAutomation
     {
         public static void GoTo()
         {
-            var menuPosts = Driver.Instance.FindElement(By.Id("menu-posts"));
-            menuPosts.Click();
-
-            var addNew = Driver.Instance.FindElement(By.LinkText("Add New"));
-            addNew.Click();
+            LeftNavigation.Posts.AddNew.Select();
         }
 
         public static CreatePostCommand CreatePost(string title)
@@ -35,18 +31,6 @@ namespace WordpressAutomation
         public static bool IsInEditMode()
         {
             return Driver.Instance.FindElement(By.Id("publish")) != null;
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
         public static string Title
@@ -60,7 +44,7 @@ namespace WordpressAutomation
             }
         }
     }
-        
+
         public class CreatePostCommand
         {
             private readonly string title;
@@ -88,9 +72,9 @@ namespace WordpressAutomation
                 Thread.Sleep(3000);
 
                 Driver.Instance.FindElement(By.Id("publish")).Click();
-                
+
+                Driver.Wait(TimeSpan.FromSeconds(1));
                 Thread.Sleep(3000);
             }
-        
         }
 }

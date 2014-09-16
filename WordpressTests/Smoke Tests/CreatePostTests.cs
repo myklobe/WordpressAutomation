@@ -16,14 +16,10 @@ namespace WordpressTests
         [TestMethod]
         public void Can_Create_A_Basic_Post()
         {
-            LoginPage.GoTo();
-            LoginPage.LoginAs("myklobe").WithPassword("T3stT3st").Login();
-
             NewPostPage.GoTo();
             NewPostPage.CreatePost("This is the test post title").WithBody("Hi, this is the body").Publish();
 
             NewPostPage.GoToNewPost();
-
             Assert.AreEqual(PostPage.Title.ToLower(), "this is the test post title", "Title did not match new post.");
         }
 

@@ -13,6 +13,12 @@ namespace WordpressTests
     public class Driver
     {
         public static IWebDriver Instance { get; set; }
+
+        public static string BaseAddress
+        {
+            get { return "http://www.myklobe.com/Test/"; }
+        }
+
         public static void Initialize()
         {
             // For Chrome //
@@ -30,6 +36,11 @@ namespace WordpressTests
         public static void Close()
         {
             Instance.Close();
+        }
+
+        internal static void Wait(TimeSpan timeSpan)
+        {
+            throw new NotImplementedException();
         }
     }
 }

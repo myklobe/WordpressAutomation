@@ -12,9 +12,6 @@ namespace WordpressTests
         [TestMethod]
         public void AdminUserCanLogin()
         {
-            LoginPage.GoTo();
-            LoginPage.LoginAs("myklobe").WithPassword("T3stT3st").Login();
-            
             Assert.IsTrue(DashboardPage.IsAt, "Failed to Log in.");
         }
 
